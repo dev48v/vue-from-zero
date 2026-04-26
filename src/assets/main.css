@@ -1,0 +1,71 @@
+/*
+ * STEP 1 — Global styles.
+ *
+ * CSS custom properties live on :root so every component can use the same
+ * palette, spacing, and radii without re-importing a JS theme file. Pink
+ * (#ec4899) is the Day 22 accent — it tracks the TechFromZero color cycle.
+ */
+
+:root {
+  --bg: #0f172a;
+  --bg-soft: #1e293b;
+  --bg-card: rgba(30, 41, 59, 0.55);
+  --text: #e2e8f0;
+  --muted: #94a3b8;
+  --accent: #ec4899;
+  --accent-soft: rgba(236, 72, 153, 0.18);
+  --border: rgba(148, 163, 184, 0.2);
+  --radius: 12px;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Inter,
+    'Helvetica Neue', Arial, sans-serif;
+
+  color-scheme: dark;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font);
+  color: var(--text);
+  background:
+    radial-gradient(900px 500px at 80% -10%, rgba(236, 72, 153, 0.18), transparent 60%),
+    radial-gradient(700px 400px at -10% 120%, rgba(99, 102, 241, 0.12), transparent 60%),
+    linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--accent);
+}
+
+input,
+button {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+::selection {
+  background: var(--accent-soft);
+  color: var(--text);
+}
