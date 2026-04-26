@@ -4,7 +4,7 @@
 
 A working SPA you can clone and learn from. Every commit is one concept, every file is one lesson, and every line is commented for clarity.
 
-- **Live demo:** _added after Vercel deploy_
+- **Live demo:** [vue-from-zero.vercel.app](https://vue-from-zero.vercel.app)
 - **API it consumes:** [laravel-from-zero.onrender.com](https://laravel-from-zero.onrender.com) (Day 18, TheMealDB proxy)
 - **Stack:** Vue 3.5, Vite 5, TypeScript 5.6, vue-router 4, plain CSS (no UI kit)
 
